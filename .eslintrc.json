@@ -1,6 +1,3 @@
-// 20240507155944
-// https://gist.githubusercontent.com/d30jeff/7807066376c089d2de2ffff242302fea/raw/b1b883cabafc2ba0b2dbd6dbd415bebd3ca7a9d5/.eslintrc
-
 {
   "env": {
     "browser": true,
@@ -8,51 +5,29 @@
     "node": true
   },
   "parser": "@typescript-eslint/parser",
-  "plugins": [
-    "@typescript-eslint",
-    "import",
-    "prettier"
-  ],
-  "ignorePatterns": [
-    "**/*.hbs",
-    "**/*.html"
-  ],
-  "extends": [
-    "prettier"
-  ],
+  "plugins": ["@typescript-eslint", "import", "prettier"],
+  "ignorePatterns": ["**/*.hbs", "**/*.html"],
+  "extends": ["prettier"],
   "rules": {
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "prettier/prettier": "error",
     "import/order": [
       "error",
       {
-        "groups": [
-          "builtin",
-          "external",
-          "internal",
-          "parent",
-          "sibling",
-          "index",
-          "object"
-        ]
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index", "object"]
       }
     ],
+    "import/no-unused-modules": "off",
     "@typescript-eslint/no-empty-function": "warn",
     "@typescript-eslint/no-unused-vars": "warn",
     "no-return-await": "error",
-    "semi": [
-      2,
-      "always"
-    ],
+    "semi": [2, "always"],
     "no-tabs": "error",
     "no-unused-vars": "warn",
     "object-curly-newline": "off",
     "no-empty-function": "warn",
     "no-trailing-spaces": "error",
-    "object-curly-spacing": [
-      2,
-      "always"
-    ],
+    "object-curly-spacing": [2, "always"],
     "key-spacing": [
       2,
       {

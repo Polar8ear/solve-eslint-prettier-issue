@@ -7,14 +7,13 @@ const ShipmentItem = {
 };
 
 // FIXME: No. Ugly AF. Coolness level 0
-const { description, itemValueCurrency, itemValueInCents, quantity, weightInGrams } =
-  ShipmentItem;
+const { description, itemValueCurrency, itemValueInCents, quantity, weightInGrams } = ShipmentItem;
 
 // Awww yiss 5/5
 const {
-  description,
+  description, //
   itemValueCurrency,
   itemValueInCents,
   quantity,
-  weightInGrams
+  weightInGrams,
 } = ShipmentItem;
